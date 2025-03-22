@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules/
+scripts/reset-project.js
 
 # Expo
 .expo/
@@ -16,6 +17,8 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+android
+ios
 
 # Metro
 .metro-health-check*
