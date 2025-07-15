@@ -20,4 +20,13 @@ export const toastConfig = {
             text2Style={{ fontSize: 14 }}
         />
     ),
+    info: (props: ToastConfigParams<any>) => (
+        <ErrorToast
+            {...props}
+            style={styles.infoToastStyle}
+            contentContainerStyle={{ paddingHorizontal: 15 }}
+            text1Style={{ fontSize: 16, fontWeight: 'bold' }}
+            text2Style={{ fontSize: 14 }}
+        />
+    ),
 };

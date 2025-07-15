@@ -56,7 +56,6 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%',
-        gap: 5,
     },
     downloadsSectionItem: {
         flexDirection: 'row',
@@ -156,13 +155,78 @@ export const styles = StyleSheet.create({
         marginTop: 10,
         width: "95%",
     },
+    infoToastStyle: {
+        borderLeftColor: 'lightblue',
+        paddingVertical: 10,
+        marginHorizontal: 20,
+        marginTop: 10,
+        width: "95%",
+    },
     // end toasts
 
+    // Internal headers for video count on both tabs
+    internalHeaderStyle: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    // end internal headers
 
     headerImage: {
         color: '#808080',
         bottom: -90,
         left: -35,
         position: 'absolute',
+    },
+
+    loadingIndicator: {
+        marginTop: 20,
+        alignItems: 'center',
+    },
+    downloadHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    clearButton: {
+        padding: 5,
+        borderRadius: 5,
+        backgroundColor: '#f44336',
+    },
+    clearButtonText: {
+        color: '#fff',
+        fontSize: 12,
+        fontWeight: '500',
+    },
+    emptyState: {
+        marginTop: 40,
+        alignItems: 'center',
+        padding: 20,
+    },
+    emptyStateText: {
+        textAlign: 'center',
+        color: '#666',
+        fontSize: 16,
+        fontStyle: 'italic',
+    },
+    statusIndicator: {
+        width: 8,
+        height: 8,
+        borderRadius: 4,
+        marginRight: 8,
+    },
+    progressBar: {
+        height: 4,
+        backgroundColor: '#e0e0e0',
+        borderRadius: 2,
+        marginTop: 8,
+        overflow: 'hidden',
+    },
+    progressFill: {
+        height: '100%',
+        backgroundColor: '#2196F3',
+        borderRadius: 2,
     },
 });

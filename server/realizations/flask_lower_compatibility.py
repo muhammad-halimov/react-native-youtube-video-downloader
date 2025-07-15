@@ -110,11 +110,13 @@ def get_video_info(url):
                 1080: "fhd",
                 720: "hd",
                 480: "sd",
-                360: "ld"
+                360: "ld",
+                240: "sld",
+                144: "uld",
             }
 
             # Фильтруем только нужные качества
-            filtered_qualities_sizes = [q for q in video_qualities if q in quality_mapping][:4]
+            filtered_qualities_sizes = [q for q in video_qualities if q in quality_mapping]
 
             # Получаем размер файла для каждого качества
             video_sizes = {}
